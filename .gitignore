@@ -1,4 +1,6 @@
-HELP.md
+### Local secrets ###
+.env
+
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
