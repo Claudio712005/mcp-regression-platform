@@ -1,0 +1,25 @@
+platform:
+  security:
+    signing-key: integration-test-signing-key-with-enough-length
+    demo-users:
+      - username: dev
+        password: dev-password
+        roles: [DEV]
+      - username: qa
+        password: qa-password
+        roles: [QA]
+      - username: architect
+        password: architect-password
+        roles: [ARCHITECT]
+  integrations:
+    account-service:
+      api-key: integration-test-api-key
+      read-timeout: 3s
+  ai:
+    reasoning-enabled: false
+  knowledge:
+    ingest-on-startup: true
+
+logging:
+  level:
+    org.springframework.ai.mcp: warn
