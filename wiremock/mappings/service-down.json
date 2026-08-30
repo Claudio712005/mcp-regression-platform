@@ -1,0 +1,22 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "GET",
+    "urlPattern": ".*",
+    "headers": {
+      "X-Demo-Scenario": {
+        "equalTo": "service-down"
+      }
+    }
+  },
+  "response": {
+    "status": 503,
+    "jsonBody": {
+      "error": "service_unavailable",
+      "message": "fintech-srv-account is not accepting traffic"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

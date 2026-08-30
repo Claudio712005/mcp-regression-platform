@@ -1,0 +1,22 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "GET",
+    "urlPattern": ".*",
+    "headers": {
+      "X-Demo-Scenario": {
+        "equalTo": "authentication-failure"
+      }
+    }
+  },
+  "response": {
+    "status": 401,
+    "jsonBody": {
+      "error": "unauthorized",
+      "message": "service api key rejected"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

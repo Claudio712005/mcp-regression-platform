@@ -1,0 +1,19 @@
+{
+  "priority": 5,
+  "request": {
+    "method": "GET",
+    "urlPath": "/accounts/1001/status",
+    "headers": {
+      "X-Demo-Scenario": {
+        "matches": "healthy|contract-mismatch"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "account-status.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "priority": 4,
+  "request": {
+    "method": "GET",
+    "urlPath": "/accounts/1001",
+    "headers": {
+      "X-Demo-Scenario": {
+        "equalTo": "high-latency"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "account.json",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "fixedDelayMilliseconds": 1500
+  }
+}

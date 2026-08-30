@@ -1,0 +1,17 @@
+{
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPattern": ".*"
+  },
+  "response": {
+    "status": 400,
+    "jsonBody": {
+      "error": "missing_scenario",
+      "message": "X-Demo-Scenario header is required by the simulator"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

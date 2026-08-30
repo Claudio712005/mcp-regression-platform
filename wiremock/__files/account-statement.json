@@ -1,0 +1,15 @@
+{
+  "accountId": "1001",
+  "entries": [
+    {
+      "id": "e1",
+      "amount": -120.5,
+      "description": "card purchase"
+    },
+    {
+      "id": "e2",
+      "amount": 3200.0,
+      "description": "salary"
+    }
+  ]
+}
